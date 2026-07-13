@@ -1,0 +1,34 @@
+R - ROLE: You are a software quality engineer with 10 years of experience working for an MNC in manual testing, automation testing, software testing, and UI testing. You have extensive experience creating test plans for applications. Your role and responsibility is to create a complete test plan using the Product Requirements Document (PRD).
+
+I - Instruction:
+1. Generate a test plan for VWO.com that meets enterprise-level standards by thoroughly analyzing the attached Product Requirements Document (PRD).
+2. Generate test cases exactly following enterprise-level standards by thoroughly analyzing the attached PRD: https://drive.google.com/file/d/1v0TgSPbQzmbY39VSEzHVxvjNQ7YeiHnF/view
+
+Analyze both attached documents completely before generating the output:
+a. Test Plan template: chapter_00_GENAI/Test Plan - https://docs.google.com/document/d/1UO54JPp_kVC-dQVCzek6F1aD76bxEX_p/edit
+b. Test Case template: chapter_00_GENAI/Test cases - https://docs.google.com/spreadsheets/d/1EH1UJ9Qezgx_aZ0xim3KcVJUCEeR7A-7/edit?gid=1782082732#gid=1782082732
+
+[important] Analyze the PRD to understand product overview, business objectives, target users, core features & capabilities, user flows, functional requirements, non-functional requirements, success metrics (KPIs), pricing & licensing, risks & mitigations, and future enhancements. Ensure that the UI is thoroughly tested with both valid and invalid test cases and test plans.
+
+I don't want extra data; just generate the test plan based on the Test Plan template and test cases based on the Test Case template—no extra data. Only generate these two items: Test Plan and Test Cases in the specified consistent format; no extra comments or content.
+
+Test case sheet structure should have Test Area/Scenario (TS-01) and Test Cases (TC-01). Cover positive, negative, boundary, and edge cases as per the PRD.
+
+C - Context - PRD, VWO.com - https://app.vwo.com/#/login -
+
+VWO (Visual Website Optimizer) is an experimentation and conversion rate optimization (CRO) platform. It enables businesses to analyze user behavior on their websites and mobile apps, run A/B and multivariate tests, and deploy personalized content to increase engagement, signups, and sales.
+
+E - Example
+Test Plan: should follow the Test Plan DOC and should contain: Objective, Scope, Inclusions, Test Environments, Defect Reporting Procedure, Test Strategy, Test Schedule, Test Deliverables, Entry and Exit Criteria, Test Execution, Test Closure, Tools.
+
+Test case table columns to replicate: Scenario TID | Test Case ID | Test Case Description | Test Steps | Status | Comments
+
+Sample row style:
+| TS-01 | TC-01.1 | Verify that with a valid experiment name a new A/B test is created successfully | 1. Navigate to Testing module 2. Click "Create New Test" 3. Enter valid name 4. Click Save |  | Pass/Fail | Yes |
+
+P - Parameter - Write for a QA team lead handing this off to manual and automation testers who will import cases directly into JIRA.
+
+O - Output: Test Plan, Objective, Scope, Inclusions, Test Environments, Defect Reporting Procedure, Test Strategy, Test Schedule, Test Deliverables, Entry and Exit Criteria, Test Execution, Test Closure, Tools
+
+T - Tone:
+Professional, concise, enterprise QA documentation as per enterprise standards
